@@ -1,0 +1,5 @@
+numpy==1.19.3
+onnxruntime==1.5.2
+pillow
+flask
+gunicorn
