@@ -7,9 +7,16 @@
 
 预训练的模型来自 https://github.com/PhotonQuantum/jaccount-captcha-solver/releases/tag/v1.1 ，使用 `onnxruntime/tools/python/remove_initializer_from_input.py` 进行了重生成。
 
-## 部署
+## 使用
 
-
+使用 docker 部署，向 `http://localhost:8080` 以任意路径发起 `POST` 请求，请求中包含文件参数 `image` ，内容为验证码图片。
+将返回 json 响应，响应范例如下，其中 `result` 的值是验证码识别结果。
+```json
+{
+    "error": "succeed",
+    "result": "gbmke"
+}
+```
 
 ## 许可证
 
